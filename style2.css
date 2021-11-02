@@ -73,7 +73,7 @@ p {
     align-items: center;
     height: 300px;
     aspect-ratio: 1;
-    font-size: 300px;
+    font-size: 10px;
     margin-right: 200px;
     margin-top: 60px;
     
@@ -82,12 +82,12 @@ p {
 #key2::after {
     content: "";
     position: absolute;
-    height: 500px;
-    width: 500px;
+    height: 150%;
+    width: 150%;
     
     background-color: transparent;
     
-    top: -30%;
+    top: -25%;
     border-top: 3px solid #dee724;
     border-radius: 50%;
     animation: rotate 2s infinite linear
@@ -99,3 +99,17 @@ p {
 
         100% {transform: rotate(360deg)}
     }
+@media (max-width: 680px){
+    .flex :nth-child(2) {
+        transform: translateX(0px);
+    }
+    .flex :nth-child(3) {
+        transform: translateX(0px);
+    }
+    #key2 {
+        display: none
+    }
+    .flex{
+        margin: 0 auto;
+    }
+    

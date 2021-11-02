@@ -11,31 +11,16 @@ const p = document.querySelectorAll("p")
 const intro = document.getElementById("intro")
 
 document.addEventListener("keydown", (event) => {
-    // vanish.classList.add("vanish")
     intro.style.height = "7" + "vh"
-    // intro.style.opacity = "0"
+    
     const keykey = event.key
-    let keyp = document.createElement("p")
-    key.innerHTML = keykey
-    // key.appendChild(keyp)
-    key2.innerHTML = keykey
-
     const keycode = event.code
-    let codep = document.createElement("p")
-    code.innerHTML = keycode
-    // code.appendChild(codep)
-
-
     const keywhich = event.which
-    let whichp = document.createElement("p")
+
+    key.innerHTML = keykey
+    key2.innerHTML = keykey
+    code.innerHTML = keycode
     which.textContent = keywhich
-    // ff
-
-
     which2.innerHTML = keywhich
-
-
-    intro.style.color = "red"
-
 
 })
