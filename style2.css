@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: #020201;
+    color: white;
+}
+
+h1 {
+    font-family: 400;
+    text-decoration: underline;
+    margin: 30px;
+    font-size: 20px;
+    letter-spacing: .1em;
+    font-weight: 300;
+}
+
+p {
+    font-weight: 400;
+    margin: 30px;
+    font-size: 40px;
+    
+}
+
+.flex :nth-child(2) {
+    transform: translateX(100px);
+}
+.flex :nth-child(3) {
+    transform: translateX(200px);
+}
+.intro {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    min-width: 100%;
+    background-color: #020201;
+    opacity: 1;
+    transition: all 1s linear;
+    
+}
+.active {
+    display: none;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    margin-left: 30px;
+}
+.grid1 {
+    grid-column: 2/2;
+    margin-top: 100px;
+}
+.flex{
+    grid-column: 1/1;
+    margin-top: 130px;
+    margin-left: 100px;
+}
+.cont {
+    min-height: 110px;
+}
+#key2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    aspect-ratio: 1;
+    font-size: 300px;
+    margin-right: 200px;
+    margin-top: 60px;
+    
+}
+
+#key2::after {
+    content: "";
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    
+    background-color: transparent;
+    
+    top: -30%;
+    border-top: 3px solid #dee724;
+    border-radius: 50%;
+    animation: rotate 2s infinite linear
+}
+
+@keyframes rotate{
+     
+        0% {transform: rotate(0deg)}
+
+        100% {transform: rotate(360deg)}
+    }
